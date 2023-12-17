@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    color: black;
+    font-family: sans-serif;
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    /* por si se agregan estilos en el futuro */
+}
+
+div.contenedor-padre {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+div.contendor-central {
+    border-radius: 20px;
+    background: linear-gradient(to bottom right,rgb(255, 95, 95), rgb(101, 101, 255));
+    padding: 5%;
+}
+
+h1.titulo-nombre {
+    color: black;
+}
+
+div.cabecero {
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+form.campo {
+    display: flex;
+}
+
+div.contenedor {
+    margin: 0px 50px 5px;
+}
+
+label {
+    margin: 10px 0px;
+}
+
+input.espacios {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* linea de enmedio */
+div.linea-medio {
+    display: flex;
+    align-items: center;
+}
+
+div.linea {
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    border-radius: 50px;
+    margin: 20px 0px;
+    width: 350px;
+}
+
+div.circulo {
+    border-radius: 50px;
+}
+
+button.convertir {
+    background-color: #34232a;
+    border: none;
+    border-radius: 50px;
+}
+
+button.convertir:hover {
+    background-color: #0a0000;
+}
+
+img.imagen {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1.numeros {
+    color: rgb(255, 0, 0);
+    display: inline-block;
+}
+
+h1 {
+    display: inline;
+}
+
+/* Media queries para pantallas de hasta 600px de ancho */
+@media screen and (max-width: 600px) {
+    div.contenedor-padre {
+        padding: 5%;
+    }
+
+    div.contendor-central {
+        padding: 3%;
+    }
+
+    h1.titulo-nombre {
+        font-size: 24px;
+    }
+
+    form.campo {
+        flex-direction: column;
+    }
+
+    div.contenedor {
+        margin: 10px 0;
+    }
+
+    input.espacios {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* linea de enmedio */
+    div.linea {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button.convertir {
+        width: 100%;
+    }
+}
+
+/* Media queries para pantallas de 601px a 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    div.contenedor-padre {
+        padding: 8%;
+    }
+
+    div.contendor-central {
+        padding: 5%;
+    }
+
+    h1.titulo-nombre {
+        font-size: 30px;
+    }
+}

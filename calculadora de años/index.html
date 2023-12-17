@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-padre">
+        <div class="contendor-central">
+            <h1 class="titulo-nombre" style="text-align: center;">Calcula tu edad</h1>
+            <!-- cabecero  -->
+            <div class="cabecero">
+                <form id="forma" class="campo">
+                    <div class="contendor">
+                        <label for="dia">Day</label>
+                        <br>
+                        <input class="espacios" type="number" id="dia" placeholder="Día" required title="El campo no puede estar vacio"/>
+                        <br>
+                    </div>
+                    <div class="contenedor">
+                        <label for="mes">Month</label>
+                        <br>
+                        <input class="espacios" type="number" id="mes" placeholder="Mes" required title="El campo no puede estar vacio"/>
+                        <br>
+                    </div>
+                    <div class="contendor">
+                        <label for="año">Year</label>
+                        <br>
+                        <input class="espacios" type="number" id="año" placeholder="Año" required title="El campo no puede estar vacio"/>
+                    </div>
+                </form>
+            </div>
+                <!-- linea del medio -->
+                <div class="linea-medio">
+                    <div class="linea"></div>
+                    <div class="circulo">
+                        <button type="submit" class="convertir" onclick="anios()">
+                            <img class="imagen" src="/images/icon-arrow.svg"/>
+                        </button>
+                    </div>
+                </div>
+            <!-- muestra de los datos -->
+            <div class="muestra-datos" id="mostrar-resultado">
+                <!-- Muestra la edad actual -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
